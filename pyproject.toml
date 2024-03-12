@@ -16,3 +16,10 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
+dependencies = [
+    "requests"
+]
+
+[project.urls]
+Homepage = "https://git.dartmouth.edu/lib-digital-strategies/RDS/projects/dartmouth-auth"
+Issues = "https://git.dartmouth.edu/lib-digital-strategies/RDS/projects/dartmouth-auth/-/issues"

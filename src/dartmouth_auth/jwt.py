@@ -4,7 +4,7 @@ import requests
 
 import os
 
-from definitions import ENV_NAMES, JWT_URL
+from dartmouth_auth.definitions import ENV_NAMES, JWT_URL
 
 
 def get_jwt(dartmouth_api_key: str = None, jwt_url: str = None) -> str | None:
