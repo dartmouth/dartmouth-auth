@@ -22,7 +22,14 @@ release = "0.0.1"
 extensions = [
     "sphinx.ext.autodoc",
     "sphinx.ext.autosummary",
+    "sphinx.ext.coverage",
+    "myst_parser",
 ]
+
+# Configuration of sphinx.ext.coverage
+coverage_show_missing_items = True
+
+source_suffix = [".rst", ".md"]
 
 templates_path = ["_templates"]
 exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
