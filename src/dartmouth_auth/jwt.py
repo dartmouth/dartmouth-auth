@@ -29,7 +29,7 @@ def get_jwt(dartmouth_api_key: str = None, jwt_url: str = None) -> str | None:
         )
         jwt = r.json()
         return jwt["jwt"]
-    raise ValueError(
+    raise KeyError(
         f"Dartmouth API key not provided as argument or defined as environment variable {ENV_NAMES['dartmouth_api_key']}."
     )
 
