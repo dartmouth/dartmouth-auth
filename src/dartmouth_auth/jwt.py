@@ -32,7 +32,7 @@ def get_jwt(dartmouth_api_key: str = None, jwt_url: str = None) -> str | None:
             jwt = jwt["jwt"]
             return jwt
         except Exception:
-            KeyError("Could not authenticate. Is your Dartmouth API key valid?")
+            raise KeyError("Could not authenticate. Is your Dartmouth API key valid?")
     raise KeyError(
         f"Dartmouth API key not provided as argument or defined as environment variable {ENV_NAMES['dartmouth_api_key']}."
     )
