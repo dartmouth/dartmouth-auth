@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "dartmouth_auth"
-version = "0.0.3"
+version = "0.0.4"
 authors = [
   { name="Simon Stone", email="simon.stone@dartmouth.edu" },
 ]
